@@ -4,7 +4,7 @@ import React from 'react';
 function UserList() {
     return (
         <div>
-            UserList
+            <h1>UserList</h1>
         </div>
     );
 }

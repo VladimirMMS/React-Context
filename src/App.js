@@ -6,9 +6,9 @@ import UserList from './components/UserList';
 function App() {
   return (
     <>
-      <h1>Hello</h1>
-      <UserList/>
       <Profile/>
+      <UserList/>
+      
       
       
     </>
