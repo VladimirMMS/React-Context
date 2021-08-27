@@ -1,10 +1,17 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import UserContext from '../context/User/UserContext';
 
-function Profile(props) {
+
+function Profile() {
+    const {selecedUser} = useContext(UserContext)
     return (
-        <div>
-            <h1>Profile</h1>
-        </div>
+        <>
+        {selecedUser && (
+            <h1>{selecedUser.first_name}</h1>
+        )}
+        
+            
+        </>
     );
 }
 

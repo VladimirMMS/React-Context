@@ -25,13 +25,14 @@ function UserState({children}) {
       
     }
     
-    const getProfile = (id) => {
-        const res = RequestUsers(url+'/'+id)
+    const getProfile = async(id) => {
+        const res =await RequestUsers(url+'/'+id)
         dispath({
             type: 'GET_PROFILE',
             payload:res?.data.data
 
         })
+        return res.config.url
     }
 
     return (
